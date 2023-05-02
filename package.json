@@ -1,0 +1,15 @@
+{
+  "name": "Vitrinity",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tailwindcss -i ./src/css/tailwind.css -o ./src/css/Tw-style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
