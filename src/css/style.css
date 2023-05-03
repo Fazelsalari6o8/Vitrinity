@@ -6,15 +6,20 @@
     box-sizing: border-box;
 }
 
+/* start header */
 header {
     width: 100%;
     height: 95px;
     background-color: #ffffff;
     box-shadow: 0 3px 8px #00000029;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 
+    /* opacity: 0.5; */
 }
 .header {
-    width: 1170px;
+    width: 1024px;
     height: 100%;
     margin: 0 auto;
     display: flex;
@@ -29,3 +34,58 @@ header {
     color: #22223a;
     margin-right: 10px;
 }
+/* end header */
+
+/* start banner */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: url("/assets/images/banner.svg") no-repeat;
+    background-size: cover;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.banner-content {
+    /* background-color: aqua; */
+    width: 768px;
+    text-align: center;
+    padding-top: 95px;
+    z-index: 1;
+}
+.banner-content h1 {
+    font: normal bold 38px/71px IRANSans;
+    color: #f0005e;
+    margin-top: 25px;
+}
+.banner-content .search-box {
+    width: 100%;
+    height: 55px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.banner-content .search-box input {
+    width: 480px;
+    height: 41px;
+    outline: none;
+    font: 20px/38px IRANSans;
+    color: #22223a;
+}
+.banner-content .search-box img {
+    width: 30px;
+    height: 30px;
+}
+.banner-content h3 {
+    font: bold 24px/43px IRANSans;
+}
+.banner-content .search-box, .banner-content h3 {
+    margin-top: 15px;
+}
+/* end banner */
