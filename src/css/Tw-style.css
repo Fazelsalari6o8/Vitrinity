@@ -522,39 +522,14 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.h-60 {
-  height: 15rem;
+.mt-\[\] {
+  margin-top: ;
 }
 
-.bg-sky-800 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity));
+.mt-\[1\] {
+  margin-top: 1;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.text-9xl {
-  font-size: 8rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.font-bold {
-  font-weight: 700;
-}
-
-.text-green-700 {
-  --tw-text-opacity: 1;
-  color: rgb(21 128 61 / var(--tw-text-opacity));
-}
-
-.text-green-300 {
-  --tw-text-opacity: 1;
-  color: rgb(134 239 172 / var(--tw-text-opacity));
+.mt-\[3rem\] {
+  margin-top: 3rem;
 }
