@@ -539,16 +539,6 @@ video {
   margin-right: auto;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -568,6 +558,10 @@ video {
 
 .flex {
   display: flex;
+}
+
+.grid {
+  display: grid;
 }
 
 .hidden {
@@ -590,8 +584,60 @@ video {
   height: 16rem;
 }
 
-.h-\[2000px\] {
-  height: 2000px;
+.h-8 {
+  height: 2rem;
+}
+
+.h-\[116px\] {
+  height: 116px;
+}
+
+.h-\[58\.09px\] {
+  height: 58.09px;
+}
+
+.h-\[59\.08px\] {
+  height: 59.08px;
+}
+
+.h-\[59\.83px\] {
+  height: 59.83px;
+}
+
+.h-\[59\.96px\] {
+  height: 59.96px;
+}
+
+.h-\[59\.98px\] {
+  height: 59.98px;
+}
+
+.h-\[60\.08px\] {
+  height: 60.08px;
+}
+
+.h-\[60\.09px\] {
+  height: 60.09px;
+}
+
+.h-\[60\.16px\] {
+  height: 60.16px;
+}
+
+.h-\[60\.31px\] {
+  height: 60.31px;
+}
+
+.h-\[60\.52px\] {
+  height: 60.52px;
+}
+
+.h-\[60\.75px\] {
+  height: 60.75px;
+}
+
+.h-\[60\.81px\] {
+  height: 60.81px;
 }
 
 .h-\[60px\] {
@@ -602,32 +648,85 @@ video {
   height: 100%;
 }
 
-.h-8 {
-  height: 2rem;
-}
-
 .w-6 {
   width: 1.5rem;
-}
-
-.w-\[330px\] {
-  width: 330px;
-}
-
-.w-full {
-  width: 100%;
 }
 
 .w-8 {
   width: 2rem;
 }
 
-.w-\[\] {
-  width: ;
+.w-\[116px\] {
+  width: 116px;
+}
+
+.w-\[40\.18px\] {
+  width: 40.18px;
+}
+
+.w-\[42\.36px\] {
+  width: 42.36px;
+}
+
+.w-\[42\.53px\] {
+  width: 42.53px;
+}
+
+.w-\[42\.66px\] {
+  width: 42.66px;
+}
+
+.w-\[48\.59px\] {
+  width: 48.59px;
+}
+
+.w-\[50\.13px\] {
+  width: 50.13px;
+}
+
+.w-\[50\.5px\] {
+  width: 50.5px;
+}
+
+.w-\[53\.18px\] {
+  width: 53.18px;
+}
+
+.w-\[58\.02px\] {
+  width: 58.02px;
+}
+
+.w-\[60\.33px\] {
+  width: 60.33px;
+}
+
+.w-\[60\.46px\] {
+  width: 60.46px;
+}
+
+.w-\[63px\] {
+  width: 63px;
 }
 
 .w-\[90\%\] {
   width: 90%;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-\[116px_116px\] {
+  grid-template-columns: 116px 116px;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .items-center {
@@ -636,6 +735,14 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.gap-\[5px\] {
+  gap: 5px;
 }
 
 .rounded {
@@ -655,14 +762,14 @@ video {
   border-color: rgb(112 112 112 / var(--tw-border-opacity));
 }
 
+.bg-main-light2 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 226 219 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-main-pink {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 0 94 / var(--tw-bg-opacity));
 }
 
 .bg-banner-img {
@@ -694,6 +801,15 @@ video {
   font-family: IRANSans;
 }
 
+.text-\[16px\] {
+  font-size: 16px;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -707,10 +823,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[16px\] {
-  font-size: 16px;
 }
 
 .text-main-dark {
@@ -735,33 +847,50 @@ video {
 }
 
 @media (min-width: 360px) {
-  .\32xs\:h-8 {
-    height: 2rem;
-  }
-
-  .\32xs\:w-8 {
-    width: 2rem;
+  .\32xs\:grid-cols-\[repeat\(3\2c _minmax\(0\2c _116px\)\)\] {
+    grid-template-columns: repeat(3, minmax(0, 116px));
   }
 }
 
 @media (min-width: 640px) {
-  .sm\:h-80 {
-    height: 20rem;
-  }
-
   .sm\:h-72 {
     height: 18rem;
+  }
+
+  .sm\:grid-cols-\[repeat\(4\2c _minmax\(0\2c _116px\)\)\] {
+    grid-template-columns: repeat(4, minmax(0, 116px));
   }
 }
 
 @media (min-width: 768px) {
+  .md\:my-7 {
+    margin-top: 1.75rem;
+    margin-bottom: 1.75rem;
+  }
+
   .md\:hidden {
     display: none;
   }
 
-  .md\:shadow-md {
-    --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
-    --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
-    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  .md\:grid-cols-\[repeat\(6\2c _minmax\(0\2c _116px\)\)\] {
+    grid-template-columns: repeat(6, minmax(0, 116px));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:h-\[198px\] {
+    height: 198px;
+  }
+
+  .xl\:w-\[198px\] {
+    width: 198px;
+  }
+
+  .xl\:grid-cols-\[repeat\(6\2c _minmax\(0\2c _198px\)\)\] {
+    grid-template-columns: repeat(6, minmax(0, 198px));
+  }
+
+  .xl\:gap-\[10px\] {
+    gap: 10px;
   }
 }
