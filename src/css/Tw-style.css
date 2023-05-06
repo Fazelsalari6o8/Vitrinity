@@ -744,6 +744,16 @@ video {
   }
 }
 
+@media (min-width: 640px) {
+  .sm\:h-80 {
+    height: 20rem;
+  }
+
+  .sm\:h-72 {
+    height: 18rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:hidden {
     display: none;
