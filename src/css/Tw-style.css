@@ -1095,6 +1095,15 @@ video {
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   }
 
+  .md\:hover\:bg-main-light:hover {
+    --tw-bg-opacity: 1;
+    background-color: rgb(211 208 203 / var(--tw-bg-opacity));
+  }
+
+  .md\:hover\:fill-main-pink:hover {
+    fill: #f0005e;
+  }
+
   .md\:hover\:text-main-pink:hover {
     --tw-text-opacity: 1;
     color: rgb(240 0 94 / var(--tw-text-opacity));
