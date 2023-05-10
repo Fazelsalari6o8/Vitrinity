@@ -37,6 +37,7 @@ module.exports = {
     backgroundImage: {
       'banner-img': "url('/assets/images/banner-mobile.jpg')",
       'banner-img-web': "url('/assets/images/banner1.jpg')",
+      'banner-img-web-xl': "url('/assets/images/banner.jpg')",
     },
   },
   plugins: [],
