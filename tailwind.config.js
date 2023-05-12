@@ -35,9 +35,9 @@ module.exports = {
       'white': '#ffffff',
     },
     backgroundImage: {
-      'banner-img': "url('/assets/images/banner-mobile.jpg')",
-      'banner-img-web': "url('/assets/images/banner1.jpg')",
-      'banner-img-web-xl': "url('/assets/images/banner.jpg')",
+      'banner-img': "url('/src/assets/images/banner-mobile.jpg')",
+      'banner-img-web': "url('/src/assets/images/banner1.jpg')",
+      'banner-img-web-xl': "url('/src/assets/images/banner.jpg')",
     },
   },
   plugins: [],
