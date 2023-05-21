@@ -9,14 +9,45 @@
 </head>
 <body>
     <!-- start header -->
-    <header class="bg-white w-full h-[60px] flex items-center shadow-[0_0.5px_6px_0_rgba(0,0,0,0.16)] z-10 sticky top-0 md:h-[95px] md:shadow-[0_3px_6px_0_rgba(0,0,0,0.16)]">
-        <div class="w-[90%] h-full flex items-center mx-auto md:w-[80%] 2xl:w-[1200px]">
-            <img src="./assets/icons/logo.svg" alt="Vitrinity-logo" class="w-8 h-8 md:w-[45px] md:h-[45px]">
-            <h1 class="font-Architects text-main-dark mr-2.5 text-xl md:text-4xl">Vitrinity</h1>
-        </div>
+    <header class="bg-white w-full h-[60px] shadow-[0_0.5px_6px_0_rgba(0,0,0,0.16)] z-10 sticky top-0 md:h-[95px] md:shadow-[0_3px_6px_0_rgba(0,0,0,0.16)]">
+        <div class="flex items-center justify-between w-[90%] h-full mx-auto md:w-[80%] 2xl:w-[1200px]">
+            <div class="h-full flex items-center">
+                <img src="./assets/icons/logo.svg" alt="Vitrinity-logo" class="w-8 h-8 md:w-[45px] md:h-[45px]">
+                <h1 class="font-Architects text-main-dark mr-2.5 text-xl md:text-4xl">Vitrinity</h1>
+            </div>
 
-        <img src="./assets/icons/search.svg" alt="search-icon" class="w-6 h-6 mx-auto md:w-8 md:h-8 2xl:w-[40.01px] 2xl:h-[40.01px]">
+            <div class="hidden md:flex w-[307px] h-[60px] rounded-lg bg-black-100 items-center justify-between">
+                <input type="text" placeholder="نام محصول یا فروشگاه" class="font-IRANSans text-lg outline-none bg-black-100 mx-2">
+                <div class="w-[60px] h-[60px] bg-main-default flex items-center justify-center rounded-l-lg">
+                    <img src="./assets/icons/search-p.svg" alt="search-icon" class="w-[30.72px] h-[30.72px]">
+                </div>
+            </div>
+            <img src="./assets/icons/search.svg" alt="search-icon" class="w-6 h-6 md:hidden md:w-8 md:h-8 2xl:w-[40.01px] 2xl:h-[40.01px]">
+        </div>
     </header>
     <!-- end header -->
+
+    <!-- start footer -->
+    <footer class="bg-white w-full h-[45px] mt-5 shadow-[0_-0.5px_6px_0_rgba(0,0,0,0.16)] 2xl:h-[105px]">
+        <div class="w-[90%] h-full mx-auto flex items-center justify-between md:w-[80%] 2xl:w-[1200px]">
+            <div class="flex items-center">
+                <a href="#" class="font-IRANSans text-xs text-main-default md:text-sm md:font-bold md:hover:text-main-pink transition-all ease-in-out duration-500 xl:text-lg 2xl:text-2xl">درباره ما</a>
+                <a href="#" class="font-IRANSans text-xs text-main-default mr-3 md:text-sm md:font-bold md:hover:text-main-pink transition-all ease-in-out duration-500 xl:text-lg 2xl:text-2xl">تماس با ما</a>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <a href="#" class="ml-3">
+                    <img src="./assets/icons/WhatsApp2.svg" alt="WhatsApp" class="w-[20.57px] h-[20.67px] md:w-6 md:h-6 md:hover:fill-main-pink 2xl:w-[44.98px] 2xl:h-[45.2px]">
+                </a>
+                <a href="#" class="ml-3">
+                    <img src="./assets/icons/telegram2.svg" alt="Telegram" class="w-[20.09px] h-[20.09px] md:w-6 md:h-6 md:hover:fill-main-pink 2xl:w-[45.2px] 2xl:h-[45.2px]">
+                </a>
+                <a href="#">
+                    <img src="./assets/icons/instagram2.svg" alt="Instagram" class="w-[19.64px] h-[19.64px] md:w-6 md:h-6 md:hover:fill-main-pink 2xl:w-[44.41px] 2xl:h-[44.42px]">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
 </body>
 </html>
