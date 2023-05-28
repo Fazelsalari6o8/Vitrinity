@@ -565,6 +565,10 @@ video {
   margin-right: 0.75rem;
 }
 
+.mr-4 {
+  margin-right: 1rem;
+}
+
 .mr-5 {
   margin-right: 1.25rem;
 }
@@ -583,6 +587,10 @@ video {
 
 .mt-8 {
   margin-top: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .flex {
@@ -721,6 +729,10 @@ video {
   width: 19.64px;
 }
 
+.w-\[1px\] {
+  width: 1px;
+}
+
 .w-\[20\.09px\] {
   width: 20.09px;
 }
@@ -755,6 +767,10 @@ video {
 
 .w-\[48\.59px\] {
   width: 48.59px;
+}
+
+.w-\[49\%\] {
+  width: 49%;
 }
 
 .w-\[50\.13px\] {
@@ -878,6 +894,16 @@ video {
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
+.bg-black-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 219 223 / var(--tw-bg-opacity));
+}
+
+.bg-green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(68 213 122 / var(--tw-bg-opacity));
+}
+
 .bg-main-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(34 34 58 / var(--tw-bg-opacity));
@@ -891,6 +917,11 @@ video {
 .bg-main-light2 {
   --tw-bg-opacity: 1;
   background-color: rgb(224 226 219 / var(--tw-bg-opacity));
+}
+
+.bg-main-pink {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 0 94 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -925,6 +956,10 @@ video {
 
 .font-IRANSans {
   font-family: IRANSans;
+}
+
+.text-\[15px\] {
+  font-size: 15px;
 }
 
 .text-\[16px\] {
@@ -1130,11 +1165,6 @@ video {
 
   .md\:border-none {
     border-style: none;
-  }
-
-  .md\:bg-black-200 {
-    --tw-bg-opacity: 1;
-    background-color: rgb(241 241 241 / var(--tw-bg-opacity));
   }
 
   .md\:bg-black-100 {
