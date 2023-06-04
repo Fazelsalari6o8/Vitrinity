@@ -854,6 +854,10 @@ video {
   width: 100%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-\[116px_116px\] {
   grid-template-columns: 116px 116px;
 }
