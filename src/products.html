@@ -36,15 +36,15 @@
         </div>
 
         <div class="flex flex-col justify-evenly font-IRANSans text-main-dark mr-5 md:h-[200px]">
-            <h1 class="text-lg font-bold md:text-[55px]">مانتو و پالتو</h1>
-            <p class="text-sm mt-1 md:text-4xl">۲۲۷ کالا در ۱۷ فروشگاه</p>
+            <h1 class="text-lg font-bold md:text-5xl lg:text-[55px]">مانتو و پالتو</h1>
+            <p class="text-sm mt-1 md:text-3xl lg:text-4xl">۲۲۷ کالا در ۱۷ فروشگاه</p>
         </div>
     </div>
     <!-- end profile -->
 
     <!-- start filters for mobile and tablet screen -->
-    <div class="w-full shadow-[0_1px_6px_0_rgba(0,0,0,0.16)] md:hidden">
-        <div class="flex items-center justify-between w-[90%] h-10 mt-10 mx-auto bg-white font-IRANSans md:hidden">
+    <div class="w-full lg:hidden">
+        <div class="flex items-center justify-between w-[90%] h-10 mt-10 mx-auto bg-white shadow-[0_1px_6px_0_rgba(0,0,0,0.16)] font-IRANSans md:w-[80%]">
             <div class="flex items-center justify-center w-[49%]">
                 <img src="./assets/icons/newest-icon.svg" alt="newest">
                 <p class="text-[15px] text-main-default mr-4">جدیدترین</p>
@@ -62,24 +62,28 @@
 
     <!-- start main for laptop and desktop -->
     <div class="mt-4">
-        <aside class="hidden md:block"></aside>
+        <aside class="hidden lg:block"></aside>
 
         <main>
-            <section class="hidden bg-white h-[70px] shadow-[0_5px_20px_0_rgba(79,78,96,0.1)] md:block">
-                <h3>ترتیب نمایش:</h3>
-                <div class="flex ">
-                    <p>جدیدترین</p>
-                    <p class="border border-main-light h-[34px]"></p>
-                    <p>پربازدیدترین</p>
-                    <p class="border border-main-light h-[34px]"></p>
-                    <p>قیمت از کم به زیاد</p>
-                    <p class="border border-main-light h-[34px]"></p>
-                    <p>قیمت از زیاد به کم</p>
+            <section class="hidden h-[70px] font-IRANSans text-main-default lg:block lg:w-full 2xl:text-2xl">
+                <div class="bg-white w-[960px] mx-auto px-4 h-full flex items-center justify-between shadow-[0_5px_20px_0_rgba(79,78,96,0.1)]">
+                    <div class="h-full flex items-center">
+                        <p class="font-bold">ترتیب نمایش:</p>
+                    </div>
+                    <div class="w-[70%] h-full flex items-center justify-between">
+                        <p>جدیدترین</p>
+                        <p class="border border-main-light h-[34px]"></p>
+                        <p>پربازدیدترین</p>
+                        <p class="border border-main-light h-[34px]"></p>
+                        <p>قیمت از کم به زیاد</p>
+                        <p class="border border-main-light h-[34px]"></p>
+                        <p>قیمت از زیاد به کم</p>
+                    </div>
                 </div>
             </section>
 
             <!-- start product cards -->
-            <section class="w-fit mx-auto grid grid-cols-[116px_116px] gap-1 2xs:grid-cols-[repeat(3,_minmax(0,_116px))] sm:grid-cols-[repeat(5,_minmax(0,_116px))] md:grid-cols-[repeat(3,_minmax(0,_240px))] md:gap-2 lg:grid-cols-[repeat(3,_minmax(0,_312px))] lg:gap-3">
+            <section class="w-fit mx-auto grid grid-cols-[116px_116px] gap-1 2xs:grid-cols-[repeat(3,_minmax(0,_116px))] sm:grid-cols-[repeat(5,_minmax(0,_116px))] md:grid-cols-[repeat(3,_minmax(0,_240px))] md:gap-2 lg:grid-cols-[repeat(3,_minmax(0,_312px))] lg:gap-3 lg:mt-4">
                 <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
                     <img src="./assets/images/01.jpg" alt="مانتو کتان طوسی" class="w-full h-full">
                     <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
