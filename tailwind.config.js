@@ -33,6 +33,7 @@ module.exports = {
       'green': '#44d57a',
       'light': '#f6eff2',
       'white': '#ffffff',
+      'redLight': '#f6eff2'
     },
     backgroundImage: {
       'banner-img': "url('/src/assets/images/banner-mobile.jpg')",
