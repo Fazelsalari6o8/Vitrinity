@@ -29,15 +29,15 @@
 
     <!-- start profile -->
     <div class="flex items-center w-[90%] mx-auto mt-8 md:w-[80%] md:mt-16 2xl:w-[1200px]">
-        <div class="flex items-center justify-center w-[66px] h-[66px] border border-main-dark rounded-[50%] md:w-[262px] md:h-[262px]">
-            <div class="flex items-center justify-center w-[60px] h-[60px] bg-main-dark rounded-[50%] md:w-[238px] md:h-[238px]">
+        <div class="flex items-center justify-center w-[66px] h-[66px] border border-main-dark rounded-[50%] md:w-[131px] md:h-[131px] lg:w-[262px] lg:h-[262px]">
+            <div class="flex items-center justify-center w-[60px] h-[60px] bg-main-dark rounded-[50%] md:w-[119px] md:h-[119px] lg:w-[238px] lg:h-[238px]">
                 <img src="./assets/icons/coatProfile.svg" alt="profile" class="w-10 h-10 md:w-28 md:h-40">
             </div>
         </div>
 
-        <div class="flex flex-col justify-evenly font-IRANSans text-main-dark mr-5 md:h-[200px]">
-            <h1 class="text-lg font-bold md:text-5xl lg:text-[55px]">مانتو و پالتو</h1>
-            <p class="text-sm mt-1 md:text-3xl lg:text-4xl">۲۲۷ کالا در ۱۷ فروشگاه</p>
+        <div class="flex flex-col justify-evenly font-IRANSans text-main-dark mr-5 md:h-[131px]">
+            <h1 class="text-lg font-bold md:text-3xl lg:text-[55px]">مانتو و پالتو</h1>
+            <p class="text-sm mt-1 md:text-xl lg:text-4xl">۲۲۷ کالا در ۱۷ فروشگاه</p>
         </div>
     </div>
     <!-- end profile -->
@@ -47,160 +47,190 @@
         <div class="flex items-center justify-between w-[90%] h-10 mt-10 mx-auto bg-white shadow-[0_1px_6px_0_rgba(0,0,0,0.16)] font-IRANSans md:w-[80%]">
             <div class="flex items-center justify-center w-[49%]">
                 <img src="./assets/icons/newest-icon.svg" alt="newest">
-                <p class="text-[15px] text-main-default mr-4">جدیدترین</p>
+                <p class="text-xs xs:text-[15px] text-main-default mr-4">جدیدترین</p>
             </div>
 
             <div class="bg-black-300 w-[1px] h-5"></div>
         
             <div class="flex items-center justify-center w-[49%]">
                 <img src="./assets/icons/6351904_filter_filtering_filters_funnel_sort_icon.svg" alt="sort-icon">
-                <p class="text-[15px] text-main-default mr-4"><span>قیمت، </span><span>سایز، </span><span>جنس</span></p>
+                <p class="text-xs xs:text-[15px] text-main-default mr-4"><span>قیمت، </span><span>سایز، </span><span>جنس</span></p>
             </div>
         </div>
     </div>
     <!-- end filters for mobile and tablet screen -->
 
     <!-- start main for laptop and desktop -->
-    <div class="mt-4">
-        <aside class="hidden lg:block"></aside>
+    <div class="mt-12 lg:flex">
+        <div class="mx-auto lg:flex justify-between lg:w-[90%] 2xl:w-[1300px]">
+            <aside class="hidden lg:block bg-white shadow-[0_5px_20px_0_#4f4e601a] w-[312px] h-[1452px] p-5 box-border text-main-dark font-IRANSans">
+                <!-- start selected filters -->
+                <div class="w-fit flex flex-wrap">
+                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>کتان</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3"></span>
 
-        <main>
-            <section class="hidden h-[70px] font-IRANSans text-main-default lg:block lg:w-full 2xl:text-2xl">
-                <div class="bg-white w-[960px] mx-auto px-4 h-full flex items-center justify-between shadow-[0_5px_20px_0_rgba(79,78,96,0.1)]">
-                    <div class="h-full flex items-center">
-                        <p class="font-bold">ترتیب نمایش:</p>
-                    </div>
-                    <div class="w-[70%] h-full flex items-center justify-between">
-                        <p>جدیدترین</p>
-                        <p class="border border-main-light h-[34px]"></p>
-                        <p>پربازدیدترین</p>
-                        <p class="border border-main-light h-[34px]"></p>
-                        <p>قیمت از کم به زیاد</p>
-                        <p class="border border-main-light h-[34px]"></p>
-                        <p>قیمت از زیاد به کم</p>
-                    </div>
-                </div>
-            </section>
+                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>سبز</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3"></span>
 
-            <!-- start product cards -->
-            <section class="w-fit mx-auto grid grid-cols-[116px_116px] gap-1 2xs:grid-cols-[repeat(3,_minmax(0,_116px))] sm:grid-cols-[repeat(5,_minmax(0,_116px))] md:grid-cols-[repeat(3,_minmax(0,_240px))] md:gap-2 lg:grid-cols-[repeat(3,_minmax(0,_312px))] lg:gap-3 lg:mt-4">
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/01.jpg" alt="مانتو کتان طوسی" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو کتان طوسی</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۲۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>قیمت از ۲۰۰ تا ۳۰۰</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3"></span>
+                </div>
+                <!-- end selected filters -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+
+                <!-- start only existing -->
+                <div class="flex justify-between items-center">
+                    <p class="text-xl">فقط موجود</p>
+                    <div class="w-8 h-[18px] bg-main-light rounded-full relative flex items-center cursor-pointer select-none">
+                        <div class="w-4 h-4 bg-white rounded-full shadow-[0_3px_6px_0_#00000029] absolute left-0 transition-all transform ease-linear duration-200"></div>
                     </div>
                 </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/02.jpg" alt="مانتو جلوبسته" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو جلوبسته</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۲۸۵</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                <!-- end only existing -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+            </aside>
+
+            <main>
+                <section class="hidden h-[70px] font-IRANSans text-main-default lg:block lg:w-full 2xl:text-2xl">
+                    <div class="bg-white mx-auto px-4 h-full flex items-center justify-between shadow-      [0_5px_20px_0_rgba(79,78,96,0.1)]">
+                        <div class="h-full flex items-center">
+                            <p class="font-bold">ترتیب نمایش:</p>
+                        </div>
+                        <div class="w-[80%] h-full flex items-center justify-between">
+                            <p>جدیدترین</p>
+                            <p class="border border-main-light h-[34px]"></p>
+                            <p>پربازدیدترین</p>
+                            <p class="border border-main-light h-[34px]"></p>
+                            <p>قیمت از کم به زیاد</p>
+                            <p class="border border-main-light h-[34px]"></p>
+                            <p>قیمت از زیاد به کم</p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/03.jpg" alt="مانتو کمربندی" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو کمربندی</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۷۶۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                </section>
+
+                <!-- start product cards -->
+                <section class="w-fit mx-auto grid grid-cols-[116px_116px] gap-1 2xs:grid-cols-[repeat(3,_minmax(0,_116px))] sm:grid-cols-[repeat(5,_minmax(0,_116px))] md:grid-cols-[repeat(3,_minmax(0,_240px))] md:gap-2 lg:grid-cols-[repeat(3,_minmax(0,_190px))] lg:gap-3 lg:mt-4 xl:grid-cols-[repeat(3,_minmax(0,_240px))] 2xl:grid-cols-[repeat(3,_minmax(0,_312px))]">
+
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/01.jpg" alt="مانتو کتان طوسی" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو کتان طوسی</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۲۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/04.jpg" alt="مانتو کرپ بژ" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو کرپ بژ</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۵۴۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/02.jpg" alt="مانتو جلوبسته" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو جلوبسته</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۲۸۵</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/05.jpg" alt="مانتو بته جقه" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو بته جقه</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۷۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/03.jpg" alt="مانتو کمربندی" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو کمربندی</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۷۶۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/06.jpg" alt="مانتو حریر جلوباز" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو حریر جلوباز</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۵۱۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/04.jpg" alt="مانتو کرپ بژ" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو کرپ بژ</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۵۴۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/07.jpg" alt="مانتو ژاکارد" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو ژاکارد</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۶۶۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/05.jpg" alt="مانتو بته جقه" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو بته جقه</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۷۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/08.jpg" alt="مانتو حریر جلوباز" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو حریر جلوباز</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۵۱۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/06.jpg" alt="مانتو حریر جلوباز" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو حریر جلوباز</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۵۱۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/09.jpg" alt="ناموجود" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۹۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/07.jpg" alt="مانتو ژاکارد" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو ژاکارد</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۶۶۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-[54px] md:h-[54px] md:bottom-8">
-                        <p class="hidden">ناموجود</p>
-                        <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/08.jpg" alt="مانتو حریر جلوباز" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو حریر جلوباز</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۵۱۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/010.jpg" alt="ناموجود" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۲۸۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/09.jpg" alt="ناموجود" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۹۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
+                        <div class="flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-[54px] md:h-[54px] md:bottom-8">
+                            <p class="hidden">ناموجود</p>
+                            <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-[54px] md:h-[54px] md:bottom-8">
-                        <p class="hidden">ناموجود</p>
-                        <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/010.jpg" alt="ناموجود" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۲۸۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
+                        <div class="flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-[54px] md:h-[54px] md:bottom-8">
+                            <p class="hidden">ناموجود</p>
+                            <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/011.jpg" alt="مانتو سوزن‌دوزی" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو سوزن‌دوزی</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۴۳۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/011.jpg" alt="مانتو سوزن‌دوزی" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو سوزن‌دوزی</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۴۳۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/012.jpg" alt="مانتو راه‌راه" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو راه‌راه</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۶۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/012.jpg" alt="مانتو راه‌راه" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو راه‌راه</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۳۶۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/013.jpg" alt="مانتو کتان کتی" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو کتان کتی</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۷۲۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/013.jpg" alt="مانتو کتان کتی" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو کتان کتی</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۷۲۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/014.jpg" alt="ناموجود" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۷۲۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/014.jpg" alt="ناموجود" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۷۲۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
+                        <div class="flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-[54px] md:h-[54px] md:bottom-8">
+                            <p class="hidden">ناموجود</p>
+                            <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
+                        </div>
                     </div>
-                    <div class="flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-[54px] md:h-[54px] md:bottom-8">
-                        <p class="hidden">ناموجود</p>
-                        <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
+                    <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                        <img src="./assets/images/015.jpg" alt="مانتو مجلسی" class="w-full h-full">
+                        <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
+                            <p class="hidden">مانتو مجلسی</p>
+                            <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۹۰۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
+                        </div>
                     </div>
-                </div>
-                <div class="w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[312px] lg:h-[312px]">
-                    <img src="./assets/images/015.jpg" alt="مانتو مجلسی" class="w-full h-full">
-                    <div class="w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-32 md:h-[54px] md:bottom-8">
-                        <p class="hidden">مانتو مجلسی</p>
-                        <p class="w-full flex items-center justify-around font-IRANSans text-xs text-main-default md:text-[33px]"><span>۹۰۰</span><span class="text-[4px] md:text-[10px]">هزار تومان</span></p>
-                    </div>
-                </div>
-            </section>
-            <!-- end product cards -->
-        </main>
+                </section>
+                <!-- end product cards -->
+            </main>
+        </div>
     </div>
     <!-- end main for laptop and desktop -->
     
