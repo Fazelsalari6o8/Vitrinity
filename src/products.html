@@ -63,14 +63,14 @@
     <!-- start main for laptop and desktop -->
     <div class="mt-12 lg:flex">
         <div class="mx-auto lg:flex justify-between lg:w-[90%] 2xl:w-[1300px]">
-            <aside class="hidden lg:block bg-white shadow-[0_5px_20px_0_#4f4e601a] w-[312px] h-[1452px] p-5 box-border text-main-dark font-IRANSans">
+            <aside class="hidden lg:block bg-white shadow-[0_5px_20px_0_#4f4e601a] w-[312px] p-5 box-border text-main-dark font-IRANSans">
                 <!-- start selected filters -->
                 <div class="w-fit flex flex-wrap">
-                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>کتان</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3"></span>
+                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>کتان</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3 cursor-pointer"></span>
 
-                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>سبز</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3"></span>
+                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>سبز</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3 cursor-pointer"></span>
 
-                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>قیمت از ۲۰۰ تا ۳۰۰</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3"></span>
+                    <span class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5"><p>قیمت از ۲۰۰ تا ۳۰۰</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter" class="mr-3 cursor-pointer"></span>
                 </div>
                 <!-- end selected filters -->
 
@@ -90,6 +90,273 @@
                 <!-- start filter sections split row -->
                 <div class="h-[2px] w-full bg-main-light my-5"></div>
                 <!-- end filter sections split row -->
+
+                <!-- start sex section -->
+                <div class="font-IRANSans text-xl text-main-dark">
+                    <div class="flex mb-8 cursor-pointer">
+                        <img src="./assets/icons/arrow.svg" alt="Arrow">
+                        <p class="mr-4">جنس</p>
+                    </div>
+                
+
+                    <div class="w-full grid grid-cols-2 gap-x-[50px] text-lg">
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="a" id="a" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="a" class="cursor-pointer">الیاف‌نخی</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="b" id="b" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="b" class="cursor-pointer">حریر</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="c" id="c" checked class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="c" class="cursor-pointer">کتان</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="d" id="d" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="d" class="cursor-pointer">ریون</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="e" id="e" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="e" class="cursor-pointer">لینن</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="f" id="f" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="f" class="cursor-pointer">کرپ</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="g" id="g" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="grid" class="cursor-pointer">ژاکارد</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="h" id="h" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="h" class="cursor-pointer">ویسکوز</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="i" id="i" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="i" class="mr-[-5px]">الیاف‌طبیعی</label>
+                        </div>
+
+                        <div class="mb-[10px]">
+                            <input type="checkbox" name="j" id="j" class="w-[15px] h-[15px] cursor-pointer">
+                            <label for="j" class="cursor-pointer">پلی‌استر</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- end sex section -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+
+                <!-- start color section -->
+                <div class="font-IRANSans text-xl text-main-dark">
+                    <div class="flex mb-8 cursor-pointer">
+                        <img src="./assets/icons/arrow.svg" alt="Arrow">
+                        <p class="mr-4">رنگ</p>
+                    </div>
+
+                    <div class="flex flex-wrap text-base">
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                            <p>مشکی</p>
+                            <div class="w-[15px] h-[15px] bg-black rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>سفید</p>
+                            <div class="w-[15px] h-[15px] bg-white border rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>آبی</p>
+                            <div class="w-[15px] h-[15px] bg-[#5be7f7] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>سبز</p>
+                            <div class="w-[15px] h-[15px] bg-[#44d57a] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>صورتی</p>
+                            <div class="w-[15px] h-[15px] bg-[#f386b9] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>طوسی</p>
+                            <div class="w-[15px] h-[15px] bg-main-light rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>زرد</p>
+                            <div class="w-[15px] h-[15px] bg-[#e9f75b] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                            <p>سرمه‌ای</p>
+                            <div class="w-[15px] h-[15px] bg-[#1c136c] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>کرم</p>
+                            <div class="w-[15px] h-[15px] bg-[#e9d9a6] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>بنفش</p>
+                            <div class="w-[15px] h-[15px] bg-[#9e10c9] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>قرمز</p>
+                            <div class="w-[15px] h-[15px] bg-[#f83333] rounded-full mr-2"></div>
+                        </div>
+                        <div class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>نارنجی</p>
+                            <div class="w-[15px] h-[15px] bg-[#f88833] rounded-full mr-2"></div>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center text-main-default">
+                        <div class="flex cursor-pointer">
+                            <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                            <p class="mr-4">رنگ‌های بیشتر</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end color section -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+
+                <!-- start size section -->
+                <div class="font-IRANSans text-xl text-main-dark">
+                    <div class="flex mb-8 cursor-pointer">
+                        <img src="./assets/icons/arrow.svg" alt="Arrow">
+                        <p class="mr-4">سایز</p>
+                    </div>
+
+                    <div class="flex flex-wrap text-base">
+                        <div class="w-fit box-border py-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>فری‌سایز</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>XS</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>S</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>M</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                            <p>L</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>XL</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>XXL</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>XXXL</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>4XL</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>34</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>36</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>38</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                            <p>40</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>42</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>44</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>46</p>
+                        </div>
+                        <div class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                            <p>48</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-center justify-center text-main-default">
+                        <div class="flex cursor-pointer">
+                            <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                            <p class="mr-4">سایزهای بیشتر</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end size section -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+
+                <!-- start brand section -->
+                <div class="font-IRANSans text-xl text-main-dark">
+                    <div class="flex mb-8 cursor-pointer">
+                        <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                        <p class="mr-4">برند</p>
+                    </div>
+                </div>
+                <!-- end brand section -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+
+                <!-- start price section -->
+                <div class="font-IRANSans text-xl text-main-dark">
+                    <div class="flex mb-8 cursor-pointer">
+                        <img src="./assets/icons/arrow.svg" alt="Arrow">
+                        <p class="mr-4">قیمت</p>
+                    </div>
+
+                    <div class="flex items-center mb-5">
+                        <p>از</p>
+                        <div class="flex items-center justify-between h-10 mr-5 pr-[5px] pl-[15px] bg-[#f9f9f9] border-2 border-main-light rounded-[4px]">
+                            <input type="text" placeholder="مثلا ۲۰۰,۰۰۰" class="outline-none bg-[#f9f9f9] placeholder:text-main-light w-9/12">
+                            <p class="text-sm text-main-light">تومان</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <p>تا</p>
+                        <div class="flex items-center justify-between h-10 mr-5 pr-[5px] pl-[15px] bg-[#f9f9f9] border-2 border-main-light rounded-[4px]">
+                            <input type="text" placeholder="مثلا ۲۰۰,۰۰۰" class="outline-none bg-[#f9f9f9] placeholder:text-main-light w-9/12">
+                            <p class="text-sm text-main-light">تومان</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- end price section -->
+
+                <!-- start filter sections split row -->
+                <div class="h-[2px] w-full bg-main-light my-5"></div>
+                <!-- end filter sections split row -->
+
+                <!-- start used section -->
+                <div class="font-IRANSans text-xl text-main-dark">
+                    <div class="flex mb-8 cursor-pointer">
+                        <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                        <p class="mr-4">مورداستفاده</p>
+                    </div>
+                </div>
+                <!-- end used section -->
+
+                <!-- start apply section -->
+                <button class="w-full h-[50px] flex items-center justify-center bg-main-pink text-white rounded-[4px] cursor-pointer hover:bg-[#d60054] transition-all ease-in-out duration-700">
+                    <p>اعمال فیلتر(ها)</p>
+                </button>
+                <!-- end apply section -->
             </aside>
 
             <main>
