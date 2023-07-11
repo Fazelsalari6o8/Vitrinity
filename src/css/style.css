@@ -4,89 +4,147 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'IRANSans';
 }
 
-/* start header */
 header {
-    width: 100%;
-    height: 95px;
-    background-color: #ffffff;
-    box-shadow: 0 3px 8px #00000029;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-
-    /* opacity: 0.5; */
-}
-.header {
-    width: 1024px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-}
-.header img {
-    width: 45px;
-    height: 45px;
-}
-.header h1 {
-    /* font: 36px 'Architects Daughter'; */
-    font-family: 'Architects Daughter';
-    color: #22223a;
-    margin-right: 10px;
-}
-/* end header */
-
-/* start banner */
-.banner {
-    width: 100%;
-    height: 100vh;
-    background: url("/assets/images/banner.svg") no-repeat;
-    background-size: cover;
-    background-color: red;
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
-.banner-content {
-    /* background-color: aqua; */
-    width: 768px;
-    text-align: center;
-    padding-top: 95px;
     z-index: 1;
 }
-.banner-content h1 {
-    font: normal bold 38px/71px IRANSans;
-    color: #f0005e;
-    margin-top: 25px;
-}
-.banner-content .search-box {
-    width: 100%;
-    height: 55px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 3px 6px #00000029;
+
+/* start search box */
+.search-box {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 15px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    font-size: 12px;
+    border: solid 1px #E0E2DB;
+    border-radius: 4px;
 }
-.banner-content .search-box input {
-    width: 480px;
-    height: 41px;
+.search-box .search-input {
     outline: none;
-    font: 20px/38px IRANSans;
-    color: #22223a;
+    width: 80%;
 }
-.banner-content .search-box img {
-    width: 30px;
-    height: 30px;
+.search-input::placeholder {
+    color: #E0E2DB;
 }
-.banner-content h3 {
-    font: bold 24px/43px IRANSans;
+/* end search box */
+
+/* start selected filters */
+.frame-selected-filters-mobile {
+    width: 100%;
+    font-size: 14px;
 }
-.banner-content .search-box, .banner-content h3 {
-    margin-top: 15px;
+.selected-filters-mobile {
+    background-color: #FFFFFF;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    margin: 8px auto;
+    padding: 5px;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+    overflow-x: scroll;
 }
-/* end banner */
+.selected-filters-mobile span {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding: 5px 10px 5px 15px;
+    margin-left: 10px;
+    background-color: #F6EFF2;
+    color: #F0005E;
+    border: solid 1px #F0005E;
+    border-radius: 10px;
+}
+.selected-filters-mobile span img {
+    width: 8px;
+    height: 8px;
+    margin-right: 15px;
+}
+/* end selected filters */
+
+/* start sorting section */
+.frame-sorting {
+    transform: translateY(100%);
+    background-color: #22223Acc;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 2;
+}
+.frame-sorting-option {
+    background-color: #FFFFFF;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.sorting-header, .sorting-option {
+    padding: 0 15px;
+    color: #22223A;
+    font-size: 16px;
+}
+.sorting-header {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    box-shadow: 0 1px 3px 0 #00000029
+}
+.sorting-header img {
+    width: 15px;
+    height: 15px;
+}
+
+.sorting-option {
+    margin: 10px 0;
+    padding-right: 25px;
+}
+.split-sorting-option {
+    width: 100%;
+    height: 1px;
+    background-color: #F9F9F9;
+    margin: 1.1rem auto;
+}
+.sorted {
+    color: #44D57A;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sorted::after {
+    content: "";
+    background: url('../assets/icons/select-sorting.svg') center;
+    background-size: cover;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+
+.show-sorting-option {
+    transform: translateY(0);
+}
+/* end sorting section */
+
+
+/* md */
+@media (min-width: 768px) {
+    .search-box {
+        display: none;
+    }
+
+    .selected-filters-mobile {
+        width: 80%;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    .frame-selected-filters-mobile {
+        display: none;
+    }
+}
