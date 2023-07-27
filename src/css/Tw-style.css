@@ -1655,10 +1655,6 @@ video {
     height: 262px;
   }
 
-  .lg\:h-\[2px\] {
-    height: 2px;
-  }
-
   .lg\:w-\[190px\] {
     width: 190px;
   }
@@ -1675,13 +1671,13 @@ video {
     width: 90%;
   }
 
-  .lg\:w-full {
-    width: 100%;
-  }
-
   .lg\:w-fit {
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:grid-cols-\[repeat\(3\2c _minmax\(0\2c _190px\)\)\] {

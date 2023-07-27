@@ -131,11 +131,14 @@ header {
 /* end sorting section for mobile and tablet screen */
 
 /* start filter section for mobile and tablet screen */
+.filter-lg {
+    display: contents;
+}
 .filters {
     transform: translateY(-101%);
     position: absolute;
     top: 0;
-    right: 0;
+    /* right: 0; */
     background-color: #ffffff;
     transition: all 0.2s ease-in-out;
     z-index: 2;
