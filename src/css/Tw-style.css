@@ -554,10 +554,6 @@ video {
   z-index: 10;
 }
 
-.z-\[100\] {
-  z-index: 100;
-}
-
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1659,6 +1655,10 @@ video {
     height: 262px;
   }
 
+  .lg\:h-\[2px\] {
+    height: 2px;
+  }
+
   .lg\:w-\[190px\] {
     width: 190px;
   }
@@ -1677,6 +1677,11 @@ video {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .lg\:grid-cols-\[repeat\(3\2c _minmax\(0\2c _190px\)\)\] {
