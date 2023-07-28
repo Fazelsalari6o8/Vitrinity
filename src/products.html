@@ -123,7 +123,7 @@
     <div class="mt-12 lg:flex">
         <div class="mx-auto lg:flex justify-between lg:w-[90%] 2xl:w-[1300px]">
             <aside
-                class="filter-lg lg:block bg-white shadow-[0_5px_20px_0_#4f4e601a] w-[312px] p-5 box-border text-main-dark font-IRANSans">
+                class="filter-lg lg:block bg-white shadow-[0_5px_20px_0_#4f4e601a] w-[312px] p-5 box-border text-main-dark font-IRANSans select-none">
                 <!--? start selected filters -->
                 <div class="hidden lg:w-fit lg:flex flex-wrap">
                     <span
@@ -162,11 +162,8 @@
                         <!--? start only existing -->
                         <div class="flex justify-between items-center">
                             <p class="text-xl">فقط موجود</p>
-                            <div
-                                class="w-8 h-[18px] bg-main-light rounded-full relative flex items-center cursor-pointer select-none">
-                                <div
-                                    class="w-4 h-4 bg-white rounded-full shadow-[0_3px_6px_0_#00000029] absolute left-0 transition-all transform ease-linear duration-200">
-                                </div>
+                            <div class="toggle">
+                                <div class="indicator"></div>
                             </div>
                         </div>
                         <!--! end only existing -->
@@ -177,13 +174,13 @@
 
                         <!--? start sex section -->
                         <div class="font-IRANSans text-xl text-main-dark">
-                            <div class="flex mb-8 cursor-pointer">
-                                <img src="./assets/icons/arrow.svg" alt="Arrow">
+                            <div class="sex-option flex mb-8 cursor-pointer">
+                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="sex-arrow">
                                 <p class="mr-4">جنس</p>
                             </div>
 
 
-                            <div class="w-full grid grid-cols-2 gap-x-[50px] text-lg">
+                            <div class="sex-options w-full grid grid-cols-2 gap-x-[50px] text-lg">
                                 <div class="mb-[10px]">
                                     <input type="checkbox" name="a" id="a" class="w-[15px] h-[15px] cursor-pointer">
                                     <label for="a" class="cursor-pointer">الیاف‌نخی</label>
@@ -244,12 +241,12 @@
 
                         <!--? start color section -->
                         <div class="font-IRANSans text-xl text-main-dark">
-                            <div class="flex mb-8 cursor-pointer">
-                                <img src="./assets/icons/arrow.svg" alt="Arrow">
+                            <div class="title-color-option flex mb-8 cursor-pointer">
+                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="color-arrow">
                                 <p class="mr-4">رنگ</p>
                             </div>
 
-                            <div class="flex flex-wrap text-base">
+                            <div class="color-options flex flex-wrap text-base">
                                 <div
                                     class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
                                     <p>مشکی</p>
@@ -313,8 +310,8 @@
                             </div>
 
                             <div class="flex items-center justify-center text-main-default">
-                                <div class="flex cursor-pointer">
-                                    <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                                <div class="more-color-option flex cursor-pointer">
+                                    <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180 more-color-arrow">
                                     <p class="mr-4">رنگ‌های بیشتر</p>
                                 </div>
                             </div>
@@ -327,12 +324,12 @@
 
                         <!--? start size section -->
                         <div class="font-IRANSans text-xl text-main-dark">
-                            <div class="flex mb-8 cursor-pointer">
-                                <img src="./assets/icons/arrow.svg" alt="Arrow">
+                            <div class="size-option flex mb-8 cursor-pointer">
+                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="size-arrow">
                                 <p class="mr-4">سایز</p>
                             </div>
 
-                            <div class="flex flex-wrap text-base">
+                            <div class="size-options flex flex-wrap text-base">
                                 <div
                                     class="w-fit box-border py-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
                                     <p>فری‌سایز</p>
@@ -404,8 +401,8 @@
                             </div>
 
                             <div class="flex items-center justify-center text-main-default">
-                                <div class="flex cursor-pointer">
-                                    <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                                <div class="more-size-option flex cursor-pointer">
+                                    <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180 more-size-arrow">
                                     <p class="mr-4">سایزهای بیشتر</p>
                                 </div>
                             </div>
@@ -418,8 +415,8 @@
 
                         <!--? start brand section -->
                         <div class="font-IRANSans text-xl text-main-dark">
-                            <div class="flex mb-8 cursor-pointer">
-                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                            <div class="brand-option flex mb-8 cursor-pointer">
+                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180 brand-arrow">
                                 <p class="mr-4">برند</p>
                             </div>
                         </div>
@@ -431,12 +428,12 @@
 
                         <!--? start price section -->
                         <div class="font-IRANSans text-xl text-main-dark">
-                            <div class="flex mb-8 cursor-pointer">
-                                <img src="./assets/icons/arrow.svg" alt="Arrow">
+                            <div class="price-option flex mb-8 cursor-pointer">
+                                <img src="./assets/icons/arrow.svg" alt="Arrow"  class="price-arrow">
                                 <p class="mr-4">قیمت</p>
                             </div>
 
-                            <div class="flex items-center mb-5">
+                            <div class="price-options flex items-center mb-5">
                                 <p>از</p>
                                 <div
                                     class="flex items-center justify-between h-10 mr-5 pr-[5px] pl-[15px] bg-[#f9f9f9] border-2 border-main-light rounded-[4px]">
@@ -445,7 +442,7 @@
                                     <p class="text-sm text-main-light">تومان</p>
                                 </div>
                             </div>
-                            <div class="flex items-center">
+                            <div class="price-options flex items-center">
                                 <p>تا</p>
                                 <div
                                     class="flex items-center justify-between h-10 mr-5 pr-[5px] pl-[15px] bg-[#f9f9f9] border-2 border-main-light rounded-[4px]">
@@ -463,9 +460,32 @@
 
                         <!--? start used section -->
                         <div class="font-IRANSans text-xl text-main-dark">
-                            <div class="flex mb-8 cursor-pointer">
-                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180">
+                            <div class="used-option flex mb-8 cursor-pointer">
+                                <img src="./assets/icons/arrow.svg" alt="Arrow" class="used-arrow">
                                 <p class="mr-4">مورداستفاده</p>
+                            </div>
+
+                            <div class="used-options w-full grid grid-cols-2 gap-x-[50px] text-lg">
+                                <div class="mb-[10px]">
+                                    <input type="checkbox" name="a" id="a" class="w-[15px] h-[15px] cursor-pointer">
+                                    <label for="a" class="cursor-pointer">روزمره</label>
+                                </div>
+
+                                <div class="mb-[10px]">
+                                    <input type="checkbox" name="b" id="b" checked class="w-[15px] h-[15px] cursor-pointer">
+                                    <label for="b" class="cursor-pointer">مهمانی</label>
+                                </div>
+
+                                <div class="mb-[10px]">
+                                    <input type="checkbox" name="c" id="c"
+                                        class="w-[15px] h-[15px] cursor-pointer">
+                                    <label for="c" class="cursor-pointer">اداری</label>
+                                </div>
+
+                                <div class="mb-[10px]">
+                                    <input type="checkbox" name="d" id="d" class="w-[15px] h-[15px] cursor-pointer">
+                                    <label for="d" class="cursor-pointer">دانشجویی</label>
+                                </div>
                             </div>
                         </div>
                         <!--! end used section -->

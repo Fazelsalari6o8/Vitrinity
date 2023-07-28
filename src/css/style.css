@@ -136,9 +136,9 @@ header {
 }
 .filters {
     transform: translateY(-101%);
+    min-height: 100%;
     position: absolute;
     top: 0;
-    /* right: 0; */
     background-color: #ffffff;
     transition: all 0.2s ease-in-out;
     z-index: 2;
@@ -160,6 +160,41 @@ header {
     box-shadow: 0 1px 3px 0 #00000029;
     padding-top: 0;
 }
+
+.toggle {
+    /* isolation: isolate; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: #d3d0cb;
+    transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.indicator {
+    width: 22px;
+    height: 85%;
+    background-color: #ffffff;
+    border-radius: 15px;
+    transform: translateX(-120%);
+    transition: all 0.4s ease-in-out;
+}
+.only-existing {
+    transform: translateX(-5%);
+}
+.toggle-on {
+    background-color: #44D57A;
+    transition: all 0.9s ease-in-out;
+}
+
+.close-icon {
+    rotate: 180deg;
+}
+.close-option {
+    display: none;
+}
 /* end filter section for mobile and tablet screen */
 
 /* md */
@@ -179,6 +214,9 @@ header {
         display: none;
     }
 
+    .filter-lg {
+        display: unset;
+    }
     .filters {
         display: unset;
         position: static;
