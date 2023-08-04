@@ -13,7 +13,7 @@ module.exports = {
       '2xl' : '1536px',
     },
     fontFamily: {
-      'Architects' : ['Architects Daughter', '"Open Sans"', 'monospace'],
+      'Architects' : ['Architects Daughter', '"Marck Script"'],
       'IRANSans' : ['IRANSans', '"B Nazanin"']
     },
     colors: {
