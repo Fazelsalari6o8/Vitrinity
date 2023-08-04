@@ -43,29 +43,29 @@ function redirect_to_homepage () {
 
 // start show sorting section
 sortingIcon.addEventListener('click', function () {
-    console.log("is Good.");
+    // console.log("is Good.");
     sortingOption.classList.add('show-sorting-option');
 });
 closeSorting.addEventListener('click', function (){
-    console.log("closed");
+    // console.log("closed");
     sortingOption.classList.remove('show-sorting-option');
 });
 // end show sorting section
 
 // start show filters section
 filtersIcon.addEventListener('click', function () {
-    console.log("show filters");
+    // console.log("show filters");
     filtersOption.classList.add('show-filters-option');
 });
 closeFilters.addEventListener('click', function () {
-    console.log("close filters");
+    // console.log("close filters");
     filtersOption.classList.remove('show-filters-option');
 });
 // end show filters sectoin
 
 // start toggle button only existing
 toggle.addEventListener('click', function () {
-    console.log('on');
+    // console.log('on');
     indicator.classList.toggle('only-existing');
     toggle.classList.toggle('toggle-on');
 });
@@ -109,6 +109,5 @@ priceOption.addEventListener('click', ()=> {
 usedOption.addEventListener('click', ()=> {
     usedArrow.classList.toggle('close-icon');
     usedOptions.classList.toggle('close-option');
-})
-// end show filter options
+});
 // end functions
