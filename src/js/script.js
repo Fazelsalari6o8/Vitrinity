@@ -38,7 +38,7 @@ const usedOptions = document.querySelector('.used-options');
 
 // start functions
 function redirect_to_homepage () {
-    window.location = "../src/index.html";
+    window.location = "./index.html";
 }
 
 // start show sorting section
