@@ -197,6 +197,27 @@ header {
 }
 /* end filter section for mobile and tablet screen */
 
+/* start product */
+.frame-price {
+    transition: all 0.2s linear;
+}
+.pic:hover > div > .frame-price {
+    right: 93px;
+}
+.pic:hover > div > .frame-price .price {
+    color: #F0005E;
+}
+
+.frame-unavailable {
+    transition: all 0.2s linear;
+}
+.caption-unavailable {
+    opacity: 0;
+    color: #ffffff;
+    transition: all 0.2s linear;
+}
+/* end product */
+
 /* md */
 @media (min-width: 768px) {
     .search-box {
@@ -205,6 +226,15 @@ header {
 
     .selected-filters-mobile {
         width: 80%;
+    }
+
+    .pic-unavailable:hover > .frame-unavailable {
+        width: 100px;
+        justify-content: start;
+        padding-right: 0.5rem;
+    }
+    .pic-unavailable:hover > .frame-unavailable .caption-unavailable {
+        opacity: 1;
     }
 }
 
