@@ -13,8 +13,8 @@ module.exports = {
       '2xl' : '1536px',
     },
     fontFamily: {
-      'Architects' : ['Architects Daughter'],
-      'IRANSans' : ['IRANSans']
+      'Architects' : ['Architects Daughter', '"Open Sans"', 'monospace'],
+      'IRANSans' : ['IRANSans', '"B Nazanin"']
     },
     colors: {
       'main': {

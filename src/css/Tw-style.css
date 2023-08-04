@@ -542,8 +542,8 @@ video {
   left: 0px;
 }
 
-.left-12 {
-  left: 3rem;
+.left-1 {
+  left: 0.25rem;
 }
 
 .right-0 {
@@ -554,28 +554,8 @@ video {
   top: 0px;
 }
 
-.left-4 {
-  left: 1rem;
-}
-
-.left-2 {
-  left: 0.5rem;
-}
-
-.left-1 {
-  left: 0.25rem;
-}
-
 .z-10 {
   z-index: 10;
-}
-
-.z-20 {
-  z-index: 20;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .mx-2 {
@@ -1236,20 +1216,16 @@ video {
   padding-top: 1rem;
 }
 
-.pl-4 {
-  padding-left: 1rem;
-}
-
 .text-center {
   text-align: center;
 }
 
 .font-Architects {
-  font-family: Architects Daughter;
+  font-family: Architects Daughter, "Open Sans", monospace;
 }
 
 .font-IRANSans {
-  font-family: IRANSans;
+  font-family: IRANSans, "B Nazanin";
 }
 
 .text-\[16px\] {
@@ -1890,6 +1866,10 @@ video {
     width: 54.43px;
   }
 
+  .\32xl\:w-\[54px\] {
+    width: 54px;
+  }
+
   .\32xl\:w-\[56\.15px\] {
     width: 56.15px;
   }
@@ -1936,10 +1916,6 @@ video {
 
   .\32xl\:w-\[993px\] {
     width: 993px;
-  }
-
-  .\32xl\:w-\[54px\] {
-    width: 54px;
   }
 
   .\32xl\:grid-cols-\[repeat\(3\2c _minmax\(0\2c _312px\)\)\] {
