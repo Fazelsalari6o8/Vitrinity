@@ -12,21 +12,18 @@
 
 <body class="md:bg-black-100">
     <!--? start header -->
-    <header
-        class="bg-white w-full h-[60px] shadow-[0_0.5px_6px_0_rgba(0,0,0,0.16)] sticky top-0 md:h-[95px] md:shadow-[0_3px_6px_0_rgba(0,0,0,0.16)]">
-        <div class="flex items-center justify-between w-[90%] h-full mx-auto md:w-[80%] 2xl:w-[1200px]">
-            <div class="h-full flex items-center">
-                <img src="./assets/icons/logo.svg" alt="Vitrinity-logo" class="w-8 h-8 md:w-[45px] md:h-[45px]">
-                <h1 class="font-Architects text-main-dark mr-2.5 text-xl cursor-pointer md:text-4xl"
-                    onclick="redirect_to_homepage();">Vitrinity</h1>
+    <header class="header-Tw">
+        <div class="frame-Tw">
+            <div class="logo-frame-Tw">
+                <img src="./assets/icons/logo.svg" alt="Vitrinity-logo" class="logo-Tw">
+                <h1 class="title-Tw" onclick="redirect_to_homepage();">Vitrinity</h1>
             </div>
 
             <!--! search section for laptap and bigger screens -->
-            <div class="hidden md:flex w-[307px] h-[60px] rounded-lg bg-black-100 items-center justify-between">
-                <input type="text" placeholder="نام محصول یا فروشگاه"
-                    class="font-IRANSans text-lg outline-none bg-black-100 mx-2">
-                <div class="w-[60px] h-[60px] bg-main-default flex items-center justify-center rounded-l-lg">
-                    <img src="./assets/icons/search-p.svg" alt="search-icon" class="w-[30.72px] h-[30.72px]">
+            <div class="search-frame-Tw">
+                <input type="text" placeholder="نام محصول یا فروشگاه" class="search-input-Tw">
+                <div class="magnifier-frame-Tw">
+                    <img src="./assets/icons/search-p.svg" alt="search-icon" class="magnifier-Tw">
                 </div>
             </div>
 
@@ -41,37 +38,34 @@
     <!--! end header -->
 
     <!--? start profile -->
-    <div class="flex items-center w-[90%] mx-auto mt-8 md:w-[80%] md:mt-16 2xl:w-[1200px]">
-        <div
-            class="flex items-center justify-center w-[66px] h-[66px] border border-main-dark rounded-[50%] md:w-[131px] md:h-[131px] lg:w-[262px] lg:h-[262px]">
-            <div
-                class="flex items-center justify-center w-[60px] h-[60px] bg-main-dark rounded-[50%] md:w-[119px] md:h-[119px] lg:w-[238px] lg:h-[238px]">
-                <img src="./assets/icons/coatProfile.svg" alt="profile" class="w-10 h-10 md:w-28 md:h-40">
+    <div class="profile-frame-Tw">
+        <div class="profile-logo-outer-frame-Tw">
+            <div class="profile-logo-frame-Tw">
+                <img src="./assets/icons/coatProfile.svg" alt="profile" class="profile-logo-Tw">
             </div>
         </div>
 
-        <div class="flex flex-col justify-evenly font-IRANSans text-main-dark mr-5 md:h-[131px]">
-            <h1 class="text-lg font-bold md:text-3xl lg:text-[55px]">مانتو و پالتو</h1>
-            <p class="text-sm mt-1 md:text-xl lg:text-4xl">۲۲۷ کالا در ۱۷ فروشگاه</p>
+        <div class="profile-title-frame-Tw">
+            <h1 class="profile-title1-Tw">مانتو و پالتو</h1>
+            <p class="profile-title2-Tw">۲۲۷ کالا در ۱۷ فروشگاه</p>
         </div>
     </div>
     <!--! end profile -->
 
     <!--? start filters for mobile and tablet screen -->
     <div class="w-full lg:hidden">
-        <div
-            class="flex items-center justify-between w-[90%] h-10 mt-10 mx-auto bg-white shadow-[0_1px_6px_0_rgba(0,0,0,0.16)] font-IRANSans md:w-[80%]">
-            <div class="flex items-center justify-center w-[49%]">
+        <div class="sort-filter-frame-Tw">
+            <div class="sort-filter-section-Tw">
                 <img src="./assets/icons/newest-icon.svg" alt="sorting-icon" id="sorting">
-                <p class="text-xs xs:text-[15px] text-main-default mr-4">جدیدترین</p>
+                <p class="sort-filter-p-Tw">جدیدترین</p>
             </div>
 
-            <div class="bg-black-300 w-[1px] h-5"></div>
+            <div class="seprator-Tw"></div>
 
-            <div class="flex items-center justify-center w-[49%]">
-                <img src="./assets/icons/6351904_filter_filtering_filters_funnel_sort_icon.svg" alt="sort-icon"
+            <div class="sort-filter-section-Tw">
+                <img src="./assets/icons/6351904_filter_filtering_filters_funnel_sort_icon.svg" alt="filters-icon"
                     id="filters-icon">
-                <p class="text-xs xs:text-[15px] text-main-default mr-4"><span>قیمت، </span><span>سایز،
+                <p class="sort-filter-p-Tw"><span>قیمت، </span><span>سایز،
                     </span><span>جنس</span></p>
             </div>
         </div>
@@ -122,27 +116,23 @@
 
     <!--? start main for laptop and desktop -->
     <div class="mt-12 lg:flex">
-        <div class="mx-auto lg:flex justify-between lg:w-[90%] 2xl:w-[1300px]">
-            <aside
-                class="filter-lg lg:block bg-white shadow-[0_5px_20px_0_#4f4e601a] w-[312px] p-5 box-border text-main-dark font-IRANSans select-none">
+        <div class="aside-main-frame-Tw">
+            <aside class="aside-Tw">
                 <!--? start selected filters -->
-                <div class="hidden lg:w-fit lg:flex flex-wrap">
-                    <span
-                        class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5">
+                <div class="selected-filters-frame-Tw">
+                    <span class="selected-filters-item-Tw">
                         <p>کتان</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter"
-                            class="mr-3 cursor-pointer">
+                            class="erase-filter-icon-Tw">
                     </span>
 
-                    <span
-                        class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5">
+                    <span class="selected-filters-item-Tw">
                         <p>سبز</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter"
-                            class="mr-3 cursor-pointer">
+                            class="erase-filter-icon-Tw">
                     </span>
 
-                    <span
-                        class="flex bg-redLight box-border p-2 rounded-[10px] border border-main-pink  text-lg text-main-pink ml-4 mb-5">
+                    <span class="selected-filters-item-Tw">
                         <p>قیمت از ۲۰۰ تا ۳۰۰</p><img src="./assets/icons/close-cross-filter.svg" alt="Erase filter"
-                            class="mr-3 cursor-pointer">
+                            class="erase-filter-icon-Tw">
                     </span>
                 </div>
                 <!--! end selected filters -->
@@ -157,11 +147,11 @@
                     <div class="frame-filters">
 
                         <!--? start filter sections split row -->
-                        <div class="hidden lg:block h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="hidden lg:block filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start only existing -->
-                        <div class="flex justify-between items-center">
+                        <div class="exist-frame-Tw">
                             <p class="text-xl">فقط موجود</p>
                             <div class="toggle">
                                 <div class="indicator"></div>
@@ -170,11 +160,11 @@
                         <!--! end only existing -->
 
                         <!--? start filter sections split row -->
-                        <div class="h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start sex section -->
-                        <div class="font-IRANSans text-xl text-main-dark">
+                        <div class="filter-items-container-Tw">
                             <div class="sex-option flex mb-8 cursor-pointer">
                                 <img src="./assets/icons/arrow.svg" alt="Arrow" class="sex-arrow">
                                 <p class="mr-4">جنس</p>
@@ -183,53 +173,52 @@
 
                             <div class="sex-options w-full grid grid-cols-2 gap-x-[50px] text-lg">
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="a" id="a" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="a" id="a" class="input-sex-option-Tw">
                                     <label for="a" class="cursor-pointer">الیاف‌نخی</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="b" id="b" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="b" id="b" class="input-sex-option-Tw">
                                     <label for="b" class="cursor-pointer">حریر</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="c" id="c" checked
-                                        class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="c" id="c" checked class="input-sex-option-Tw">
                                     <label for="c" class="cursor-pointer">کتان</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="d" id="d" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="d" id="d" class="input-sex-option-Tw">
                                     <label for="d" class="cursor-pointer">ریون</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="e" id="e" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="e" id="e" class="input-sex-option-Tw">
                                     <label for="e" class="cursor-pointer">لینن</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="f" id="f" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="f" id="f" class="input-sex-option-Tw">
                                     <label for="f" class="cursor-pointer">کرپ</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="g" id="g" class="w-[15px] h-[15px] cursor-pointer">
-                                    <label for="grid" class="cursor-pointer">ژاکارد</label>
+                                    <input type="checkbox" name="g" id="g" class="input-sex-option-Tw">
+                                    <label for="g" class="cursor-pointer">ژاکارد</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="h" id="h" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="h" id="h" class="input-sex-option-Tw">
                                     <label for="h" class="cursor-pointer">ویسکوز</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="i" id="i" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="i" id="i" class="input-sex-option-Tw">
                                     <label for="i" class="mr-[-5px]">الیاف‌طبیعی</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="j" id="j" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="j" id="j" class="input-sex-option-Tw">
                                     <label for="j" class="cursor-pointer">پلی‌استر</label>
                                 </div>
                             </div>
@@ -237,80 +226,68 @@
                         <!--! end sex section -->
 
                         <!--? start filter sections split row -->
-                        <div class="h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start color section -->
-                        <div class="font-IRANSans text-xl text-main-dark">
+                        <div class="filter-items-container-Tw">
                             <div class="title-color-option flex mb-8 cursor-pointer">
                                 <img src="./assets/icons/arrow.svg" alt="Arrow" class="color-arrow">
                                 <p class="mr-4">رنگ</p>
                             </div>
 
                             <div class="color-options flex flex-wrap text-base">
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                                <div class="color-filter-items-Tw border-main-default bg-main-light2">
                                     <p>مشکی</p>
-                                    <div class="w-[15px] h-[15px] bg-black rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-black"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>سفید</p>
-                                    <div class="w-[15px] h-[15px] bg-white border rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-white border"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>آبی</p>
-                                    <div class="w-[15px] h-[15px] bg-[#5be7f7] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#5be7f7]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>سبز</p>
-                                    <div class="w-[15px] h-[15px] bg-[#44d57a] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#44d57a]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>صورتی</p>
-                                    <div class="w-[15px] h-[15px] bg-[#f386b9] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#f386b9]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>طوسی</p>
-                                    <div class="w-[15px] h-[15px] bg-main-light rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-main-light"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>زرد</p>
-                                    <div class="w-[15px] h-[15px] bg-[#e9f75b] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#e9f75b]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                                <div class="color-filter-items-Tw border-main-default bg-main-light2">
                                     <p>سرمه‌ای</p>
-                                    <div class="w-[15px] h-[15px] bg-[#1c136c] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#1c136c]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>کرم</p>
-                                    <div class="w-[15px] h-[15px] bg-[#e9d9a6] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#e9d9a6]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>بنفش</p>
-                                    <div class="w-[15px] h-[15px] bg-[#9e10c9] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#9e10c9]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>قرمز</p>
-                                    <div class="w-[15px] h-[15px] bg-[#f83333] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#f83333]"></div>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-1 flex items-center justify-between border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="color-filter-items-Tw color-border-Tw">
                                     <p>نارنجی</p>
-                                    <div class="w-[15px] h-[15px] bg-[#f88833] rounded-full mr-2"></div>
+                                    <div class="color-circle-Tw bg-[#f88833]"></div>
                                 </div>
                             </div>
 
-                            <div class="flex items-center justify-center text-main-default">
+                            <div class="more-filter-option-Tw">
                                 <div class="more-color-option flex cursor-pointer">
                                     <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180 more-color-arrow">
                                     <p class="mr-4">رنگ‌های بیشتر</p>
@@ -320,88 +297,71 @@
                         <!--! end color section -->
 
                         <!--? start filter sections split row -->
-                        <div class="h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start size section -->
-                        <div class="font-IRANSans text-xl text-main-dark">
+                        <div class="filter-items-container-Tw">
                             <div class="size-option flex mb-8 cursor-pointer">
                                 <img src="./assets/icons/arrow.svg" alt="Arrow" class="size-arrow">
                                 <p class="mr-4">سایز</p>
                             </div>
 
                             <div class="size-options flex flex-wrap text-base">
-                                <div
-                                    class="w-fit box-border py-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw py-[10px]">
                                     <p>فری‌سایز</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>XS</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>S</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>M</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                                <div class="size-filter-items-Tw p-[10px] border-main-default">
                                     <p>L</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>XL</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>XXL</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>XXXL</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>4XL</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>34</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>36</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>38</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-default rounded-[4px] ml-[10px] mb-[10px] cursor-pointer bg-main-light2">
+                                <div class="size-filter-items-Tw p-[10px] border-main-default">
                                     <p>40</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>42</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>44</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>46</p>
                                 </div>
-                                <div
-                                    class="w-fit box-border p-[10px] border-2 border-main-light rounded-[4px] ml-[10px] mb-[10px] cursor-pointer">
+                                <div class="size-filter-items-Tw p-[10px]">
                                     <p>48</p>
                                 </div>
                             </div>
 
-                            <div class="flex items-center justify-center text-main-default">
+                            <div class="more-filter-option-Tw">
                                 <div class="more-size-option flex cursor-pointer">
                                     <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180 more-size-arrow">
                                     <p class="mr-4">سایزهای بیشتر</p>
@@ -411,11 +371,11 @@
                         <!--! end size section -->
 
                         <!--? start filter sections split row -->
-                        <div class="h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start brand section -->
-                        <div class="font-IRANSans text-xl text-main-dark">
+                        <div class="filter-items-container-Tw">
                             <div class="brand-option flex mb-8 cursor-pointer">
                                 <img src="./assets/icons/arrow.svg" alt="Arrow" class="rotate-180 brand-arrow">
                                 <p class="mr-4">برند</p>
@@ -424,11 +384,11 @@
                         <!--! end brand section -->
 
                         <!--? start filter sections split row -->
-                        <div class="h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start price section -->
-                        <div class="font-IRANSans text-xl text-main-dark">
+                        <div class="filter-items-container-Tw">
                             <div class="price-option flex mb-8 cursor-pointer">
                                 <img src="./assets/icons/arrow.svg" alt="Arrow" class="price-arrow">
                                 <p class="mr-4">قیمت</p>
@@ -438,8 +398,8 @@
                                 <p>از</p>
                                 <div
                                     class="flex items-center justify-between h-10 mr-5 pr-[5px] pl-[15px] bg-[#f9f9f9] border-2 border-main-light rounded-[4px]">
-                                    <input type="text" placeholder="مثلا ۲۰۰,۰۰۰"
-                                        class="outline-none bg-[#f9f9f9] placeholder:text-main-light w-9/12">
+                                    <input type="number" min="0" max="100000000" placeholder="مثلا ۲۰۰,۰۰۰"
+                                        class="input-price outline-none bg-[#f9f9f9] placeholder:text-main-light w-9/12">
                                     <p class="text-sm text-main-light">تومان</p>
                                 </div>
                             </div>
@@ -447,8 +407,8 @@
                                 <p>تا</p>
                                 <div
                                     class="flex items-center justify-between h-10 mr-5 pr-[5px] pl-[15px] bg-[#f9f9f9] border-2 border-main-light rounded-[4px]">
-                                    <input type="text" placeholder="مثلا ۲۰۰,۰۰۰"
-                                        class="outline-none bg-[#f9f9f9] placeholder:text-main-light w-9/12">
+                                    <input type="number" min="0" max="100000000" placeholder="مثلا ۲۰۰,۰۰۰"
+                                        class="input-price outline-none bg-[#f9f9f9] placeholder:text-main-light w-9/12">
                                     <p class="text-sm text-main-light">تومان</p>
                                 </div>
                             </div>
@@ -456,11 +416,11 @@
                         <!--! end price section -->
 
                         <!--? start filter sections split row -->
-                        <div class="h-[2px] w-full bg-main-light my-5"></div>
+                        <div class="filter-section-split-row-Tw"></div>
                         <!--! end filter sections split row -->
 
                         <!--? start used section -->
-                        <div class="font-IRANSans text-xl text-main-dark">
+                        <div class="filter-items-container-Tw">
                             <div class="used-option flex mb-8 cursor-pointer">
                                 <img src="./assets/icons/arrow.svg" alt="Arrow" class="used-arrow">
                                 <p class="mr-4">مورداستفاده</p>
@@ -468,23 +428,26 @@
 
                             <div class="used-options w-full grid grid-cols-2 gap-x-[50px] text-lg">
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="a" id="a" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="a" id="everyday"
+                                        class="w-[15px] h-[15px] cursor-pointer">
                                     <label for="a" class="cursor-pointer">روزمره</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="b" id="b" checked
+                                    <input type="checkbox" name="b" id="party" checked
                                         class="w-[15px] h-[15px] cursor-pointer">
                                     <label for="b" class="cursor-pointer">مهمانی</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="c" id="c" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="c" id="official"
+                                        class="w-[15px] h-[15px] cursor-pointer">
                                     <label for="c" class="cursor-pointer">اداری</label>
                                 </div>
 
                                 <div class="mb-[10px]">
-                                    <input type="checkbox" name="d" id="d" class="w-[15px] h-[15px] cursor-pointer">
+                                    <input type="checkbox" name="d" id="student"
+                                        class="w-[15px] h-[15px] cursor-pointer">
                                     <label for="d" class="cursor-pointer">دانشجویی</label>
                                 </div>
                             </div>
@@ -509,124 +472,104 @@
                             <p class="font-bold">ترتیب نمایش:</p>
                         </div>
                         <div class="w-[80%] h-full flex items-center justify-between">
-                            <p>جدیدترین</p>
+                            <p class="cursor-pointer">جدیدترین</p>
                             <p class="border border-main-light h-[34px]"></p>
-                            <p>پربازدیدترین</p>
+                            <p class="cursor-pointer">پربازدیدترین</p>
                             <p class="border border-main-light h-[34px]"></p>
-                            <p>قیمت از کم به زیاد</p>
+                            <p class="cursor-pointer">قیمت از کم به زیاد</p>
                             <p class="border border-main-light h-[34px]"></p>
-                            <p>قیمت از زیاد به کم</p>
+                            <p class="cursor-pointer">قیمت از زیاد به کم</p>
                         </div>
                     </div>
                 </section>
 
                 <!--? start product cards -->
-                <section
-                    class="w-fit mx-auto grid grid-cols-[116px_116px] gap-1 2xs:grid-cols-[repeat(3,_minmax(0,_116px))] sm:grid-cols-[repeat(5,_minmax(0,_116px))] md:grid-cols-[repeat(3,_minmax(0,_240px))] md:gap-2 lg:grid-cols-[repeat(3,_minmax(0,_190px))] lg:gap-3 lg:mt-4 xl:grid-cols-[repeat(3,_minmax(0,_240px))] 2xl:grid-cols-[repeat(3,_minmax(0,_312px))]">
+                <section class="products-section-Tw">
 
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/01.jpg" alt="مانتو کتان طوسی" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو کتان طوسی</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۳۲۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۳۲۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/02.jpg" alt="مانتو جلوبسته" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو جلوبسته</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۲۸۵</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۲۸۵</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/03.jpg" alt="مانتو کمربندی" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو کمربندی</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۷۶۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۷۶۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/04.jpg" alt="مانتو کرپ بژ" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو کرپ بژ</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۵۴۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۵۴۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/05.jpg" alt="مانتو بته جقه" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو بته جقه</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۳۷۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۳۷۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/06.jpg" alt="مانتو حریر جلوباز" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو حریر جلوباز</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۵۱۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۵۱۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/07.jpg" alt="مانتو ژاکارد" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو ژاکارد</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۶۶۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۶۶۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/08.jpg" alt="مانتو حریر جلوباز" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو حریر جلوباز</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۵۱۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۵۱۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic-unavailable w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic-unavailable product-items-container-Tw" data-exist="no">
                         <img src="./assets/images/09.jpg" alt="ناموجود" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
+                            <p class="frame-price products-price-frame-Tw">
                                 <span>۳۹۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
@@ -636,13 +579,10 @@
                             <p class="caption-unavailable absolute left-1 hidden md:block">ناموجود</p>
                         </div>
                     </div>
-                    <div
-                        class="pic-unavailable w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic-unavailable product-items-container-Tw" data-exist="no">
                         <img src="./assets/images/010.jpg" alt="ناموجود" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
+                            <p class="frame-price products-price-frame-Tw">
                                 <span>۲۸۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
@@ -652,67 +592,56 @@
                             <p class="caption-unavailable absolute left-1 hidden md:block">ناموجود</p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/011.jpg" alt="مانتو سوزن‌دوزی" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو سوزن‌دوزی</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۴۳۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۴۳۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/012.jpg" alt="مانتو راه‌راه" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو راه‌راه</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۳۶۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۳۶۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/013.jpg" alt="مانتو کتان کتی" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو کتان کتی</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۷۲۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۷۲۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
-                    <div
-                        class="pic-unavailable w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic-unavailable product-items-container-Tw" data-exist="no">
                         <img src="./assets/images/014.jpg" alt="ناموجود" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
+                            <p class="frame-price products-price-frame-Tw">
                                 <span>۷۲۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                         <div
                             class="frame-unavailable flex items-center justify-center w-5 h-5 bg-main-pink rounded-s absolute left-0 bottom-4 md:w-11 md:h-11 md:bottom-8 2xl:w-[54px] 2xl:h-[54px]">
                             <img src="./assets/icons/close-cross.svg" alt="close-cross" class="md:w-5 md:h-5">
-                            <p class="caption-unavailable absolute left-1 hidden md:block md:text-xs">ناموجود</p>
+                            <p class="caption-unavailable absolute left-1 hidden md:block">ناموجود</p>
                         </div>
                     </div>
-                    <div
-                        class="pic w-[116px] h-[116px] relative md:w-[240px] md:h-[240px] lg:w-[190px] lg:h-[190px] xl:w-[240px] xl:h-[240px] 2xl:w-[312px] 2xl:h-[312px]">
+                    <div class="pic product-items-container-Tw" data-exist="yes">
                         <img src="./assets/images/015.jpg" alt="مانتو مجلسی" class="w-full h-full">
-                        <div
-                            class="frame-caption text-main-default whitespace-nowrap w-12 h-5 bg-white flex items-center justify-between rounded-e absolute right-0 bottom-4 md:w-24 md:h-11 md:bottom-8 2xl:w-32 2xl:h-[54px]">
+                        <div class="frame-caption product-items-caption-Tw">
                             <p class="caption hidden md:block md:text-xs">مانتو مجلسی</p>
-                            <p
-                                class="frame-price w-full flex items-center justify-around font-IRANSans text-xs md:bg-white md:rounded-e md:absolute md:right-0 md:text-2xl md:w-24 md:h-11 2xl:text-[33px] 2xl:w-32 2xl:h-[54px]">
-                                <span class="price">۹۰۰</span><span class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
+                            <p class="frame-price products-price-frame-Tw">
+                                <span class="price">۹۰۰</span><span
+                                    class="text-[4px] md:text-[8px] 2xl:text-[10px]">هزار تومان</span>
                             </p>
                         </div>
                     </div>
@@ -724,35 +653,32 @@
     <!--! end main for laptop and desktop -->
 
     <!--? start footer -->
-    <footer class="bg-white w-full h-[45px] mt-5 shadow-[0_-0.5px_6px_0_rgba(0,0,0,0.16)] 2xl:h-[105px]">
-        <div class="w-[90%] h-full mx-auto flex items-center justify-between md:w-[80%] 2xl:w-[1200px]">
+    <footer class="footer-container-Tw">
+        <div class="footer-frame-Tw">
             <div class="flex items-center">
-                <a href="#"
-                    class="font-IRANSans text-xs text-main-default md:text-sm md:font-bold md:hover:text-main-pink transition-all ease-in-out duration-500 xl:text-lg 2xl:text-2xl">درباره
-                    ما</a>
-                <a href="#"
-                    class="font-IRANSans text-xs text-main-default mr-3 md:text-sm md:font-bold md:hover:text-main-pink transition-all ease-in-out duration-500 xl:text-lg 2xl:text-2xl">تماس
-                    با ما</a>
+                <a href="#" class="footer-about-us-Tw">درباره ما</a>
+                <a href="#" class="footer-about-us-Tw mr-3">تماس با ما</a>
             </div>
 
             <div class="flex items-center justify-between">
                 <a href="#" class="ml-3">
                     <img src="./assets/icons/WhatsApp2.svg" alt="WhatsApp"
-                        class="w-[20.57px] h-[20.67px] md:w-6 md:h-6 md:hover:fill-main-pink 2xl:w-[44.98px] 2xl:h-[45.2px]">
+                        class="social-network-icons-Tw w-[20.57px] h-[20.67px] 2xl:w-[44.98px] 2xl:h-[45.2px]">
                 </a>
                 <a href="#" class="ml-3">
                     <img src="./assets/icons/telegram2.svg" alt="Telegram"
-                        class="w-[20.09px] h-[20.09px] md:w-6 md:h-6 md:hover:fill-main-pink 2xl:w-[45.2px] 2xl:h-[45.2px]">
+                        class="social-network-icons-Tw w-[20.09px] h-[20.09px] 2xl:w-[45.2px] 2xl:h-[45.2px]">
                 </a>
                 <a href="#">
                     <img src="./assets/icons/instagram2.svg" alt="Instagram"
-                        class="w-[19.64px] h-[19.64px] md:w-6 md:h-6 md:hover:fill-main-pink 2xl:w-[44.41px] 2xl:h-[44.42px]">
+                        class="social-network-icons-Tw w-[19.64px] h-[19.64px] 2xl:w-[44.41px] 2xl:h-[44.42px]">
                 </a>
             </div>
         </div>
     </footer>
     <!--! end footer -->
+    
+    <script src="./js/script.js"></script>
 </body>
-<script src="./js/script.js"></script>
 
 </html>
